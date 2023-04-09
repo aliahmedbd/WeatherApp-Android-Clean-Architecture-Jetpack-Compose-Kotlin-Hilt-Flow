@@ -63,4 +63,5 @@ dependencies {
 
     // Module
     implementation(project(Module.CoreUi))
+    implementation(project(Module.data))
 }
