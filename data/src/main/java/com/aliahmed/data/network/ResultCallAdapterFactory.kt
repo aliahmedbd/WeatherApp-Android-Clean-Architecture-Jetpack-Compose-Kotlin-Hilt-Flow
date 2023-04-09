@@ -1,6 +1,7 @@
 package com.aliahmed.data.repository
 import com.aliahmed.data.model.BaseApiResponse
 import com.aliahmed.data.model.ServerErrorCode
+import com.aliahmed.data.network.ApiException
 import com.google.gson.Gson
 import okhttp3.Request
 import okio.Timeout

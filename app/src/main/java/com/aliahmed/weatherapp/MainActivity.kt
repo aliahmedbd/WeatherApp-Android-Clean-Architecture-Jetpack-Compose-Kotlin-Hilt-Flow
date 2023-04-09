@@ -21,7 +21,9 @@ import androidx.navigation.compose.rememberNavController
 import com.aliahmed.core_ui.NavigationItem
 import com.aliahmed.weatherapp.ui.Navigation
 import com.aliahmed.weatherapp.ui.theme.WeatherAppTheme
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

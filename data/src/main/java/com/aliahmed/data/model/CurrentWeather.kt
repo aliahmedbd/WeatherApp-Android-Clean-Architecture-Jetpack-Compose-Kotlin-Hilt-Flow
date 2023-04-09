@@ -3,9 +3,11 @@ package com.aliahmed.data.model
 
 import com.google.gson.annotations.SerializedName
 
-data class CurrentWeather (
+data class CurrentWeather(
     @SerializedName("current")
-    val current: Current,
+    val current: Current? = null,
     @SerializedName("location")
-    val location: Location
+    val location: Location? = null,
+    @SerializedName("forecast")
+    val forecast: Forecast? = null
 )

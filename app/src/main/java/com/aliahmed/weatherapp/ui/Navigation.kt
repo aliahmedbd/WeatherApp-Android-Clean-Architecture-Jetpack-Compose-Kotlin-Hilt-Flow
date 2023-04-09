@@ -12,7 +12,7 @@ import com.aliahmed.forecasting.ForecastingScreen
 fun Navigation (navController: NavHostController) {
     NavHost(navController = navController, startDestination = NavigationItem.CurrentWeather.route){
         composable(NavigationItem.CurrentWeather.route){
-            CurrentWeatherScreen()
+            CurrentWeatherScreen(navController)
         }
 
         composable(NavigationItem.Forecasting.route){

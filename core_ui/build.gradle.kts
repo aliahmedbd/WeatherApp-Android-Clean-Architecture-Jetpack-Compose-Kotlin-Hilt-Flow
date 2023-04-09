@@ -31,14 +31,32 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+
+    buildFeatures {
+        compose = true
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion = Compose.compilerVersion
+    }
 }
 
 dependencies {
 
-    implementation("androidx.core:core-ktx:1.7.0")
-    implementation("androidx.appcompat:appcompat:1.6.1")
-    implementation("com.google.android.material:material:1.8.0")
-    testImplementation("junit:junit:4.13.2")
-    androidTestImplementation("androidx.test.ext:junit:1.1.5")
-    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+    // Compose
+    val composeBom = platform(Compose.bom)
+    implementation(composeBom)
+    androidTestImplementation(composeBom)
+
+    implementation(Compose.ui)
+    implementation(Compose.material)
+    implementation(Compose.activityCompose)
+    implementation(Compose.lifecycleViewModelCompose)
+    implementation(Compose.navigationCompose)
+    implementation(Compose.hiltNavigationCompose)
+
+    implementation(Compose.uiToolingPreview)
+    debugImplementation(Compose.uiTooling)
+
+    androidTestImplementation(Compose.uiTestJunit)
+    debugImplementation(Compose.uiTestManifest)
 }
