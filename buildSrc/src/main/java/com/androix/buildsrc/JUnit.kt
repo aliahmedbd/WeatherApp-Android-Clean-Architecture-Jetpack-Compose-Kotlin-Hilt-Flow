@@ -4,4 +4,7 @@ object JUnit {
 
     private const val extVersion = "1.1.3"
     const val ext = "androidx.test.ext:junit:$extVersion"
+
+    private const val mockkVersion = "1.12.3"
+    const val mockk = "io.mockk:mockk:$mockkVersion"
 }

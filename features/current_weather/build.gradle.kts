@@ -73,4 +73,10 @@ dependencies {
 
     //coil
     implementation(Coil.coilCompose)
+
+    //Test
+    implementation(JUnit.junit4)
+    implementation(JUnit.ext)
+    implementation(JUnit.mockk)
+
 }
