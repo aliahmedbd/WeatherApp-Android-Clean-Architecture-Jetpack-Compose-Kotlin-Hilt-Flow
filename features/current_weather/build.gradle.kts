@@ -77,6 +77,6 @@ dependencies {
     //Test
     implementation(JUnit.junit4)
     implementation(JUnit.ext)
-    implementation(JUnit.mockk)
+    androidTestImplementation(JUnit.mockk)
 
 }

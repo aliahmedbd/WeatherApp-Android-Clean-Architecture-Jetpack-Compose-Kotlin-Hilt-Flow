@@ -1,6 +1,10 @@
+import org.jetbrains.kotlin.kapt3.base.Kapt.kapt
+
 plugins {
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
+    kotlin("kapt")
+    id("com.google.dagger.hilt.android")
 }
 
 android {
@@ -42,7 +46,6 @@ android {
 
 dependencies {
 
-
     // Compose
     val composeBom = platform(Compose.bom)
     implementation(composeBom)
@@ -63,4 +66,12 @@ dependencies {
 
     // Module
     implementation(project(Module.CoreUi))
+    implementation(project(Module.data))
+
+    //coil
+    implementation(Coil.coilCompose)
+
+    // Hilt
+    implementation(Hilt.android)
+    kapt(Hilt.compiler)
 }

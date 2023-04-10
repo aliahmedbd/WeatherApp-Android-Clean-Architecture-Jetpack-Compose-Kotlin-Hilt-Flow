@@ -6,7 +6,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.aliahmed.core_ui.NavigationItem
 import com.aliahmed.current_weather.view.CurrentWeatherScreen
-import com.aliahmed.forecasting.ForecastingScreen
+import com.aliahmed.forecasting.view.ForecastingScreen
 
 @Composable
 fun Navigation (navController: NavHostController) {
@@ -16,7 +16,7 @@ fun Navigation (navController: NavHostController) {
         }
 
         composable(NavigationItem.Forecasting.route){
-            ForecastingScreen()
+            ForecastingScreen(navController)
         }
 
     }
