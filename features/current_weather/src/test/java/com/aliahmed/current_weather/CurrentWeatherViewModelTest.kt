@@ -2,17 +2,10 @@ package com.aliahmed.current_weather
 
 import com.aliahmed.current_weather.usecase.CurrentWeatherUseCase
 import com.aliahmed.current_weather.viewmodel.CurrentWeatherViewModel
-import com.aliahmed.data.model.CurrentWeather
-import com.aliahmed.data.network.Resource
-import io.mockk.every
 import io.mockk.mockk
-import io.mockk.verify
-import kotlinx.coroutines.runBlocking
 import org.junit.Assert.assertEquals
 import org.junit.Before
-import org.junit.Rule
 import org.junit.Test
-import kotlin.text.Typography.times
 
 class CurrentWeatherViewModelTest {
 
