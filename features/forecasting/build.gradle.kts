@@ -74,4 +74,11 @@ dependencies {
     // Hilt
     implementation(Hilt.android)
     kapt(Hilt.compiler)
+
+    //Test
+    implementation(JUnit.junit4)
+    implementation(JUnit.ext)
+    testImplementation("io.mockk:mockk:1.12.5")
+    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.4")
+
 }
