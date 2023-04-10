@@ -77,6 +77,7 @@ dependencies {
     //Test
     implementation(JUnit.junit4)
     implementation(JUnit.ext)
-    androidTestImplementation(JUnit.mockk)
+    testImplementation("io.mockk:mockk:1.12.5")
+    androidTestImplementation("androidx.arch.core:core-testing:2.0.0")
 
 }
