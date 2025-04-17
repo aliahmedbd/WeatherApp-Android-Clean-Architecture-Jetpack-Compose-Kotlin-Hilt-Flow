@@ -1,7 +1,9 @@
-buildscript { }
+buildscript {
+    val agp_version by extra("8.9.1")
+}
 
 plugins {
-    id("com.android.application") version Gradle.version apply false
+    id("com.android.application") version "8.9.1" apply false
     id("com.android.library") version Gradle.version apply false
     id("org.jetbrains.kotlin.android") version Kotlin.version apply false
     id("org.jetbrains.kotlin.jvm") version Kotlin.version apply false

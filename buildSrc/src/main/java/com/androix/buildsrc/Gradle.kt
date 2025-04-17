@@ -1,3 +1,3 @@
 object Gradle {
-    const val version = "7.3.1"
+    const val version = "8.5.1"
 }
