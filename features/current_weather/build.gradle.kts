@@ -1,6 +1,7 @@
 plugins {
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
+    id("org.jetbrains.kotlin.plugin.compose")
     kotlin("kapt")
     id("com.google.dagger.hilt.android")
 }
@@ -40,9 +41,6 @@ android {
     buildFeatures {
         compose = true
     }
-    composeOptions {
-        kotlinCompilerExtensionVersion = Compose.compilerVersion
-    }
 }
 
 dependencies {
@@ -78,7 +76,7 @@ dependencies {
     //Test
     implementation(JUnit.junit4)
     implementation(JUnit.ext)
-    testImplementation("io.mockk:mockk:1.12.5")
-    androidTestImplementation("androidx.arch.core:core-testing:2.0.0")
+    testImplementation("io.mockk:mockk:1.14.0")
+    androidTestImplementation("androidx.arch.core:core-testing:2.2.0")
 
 }
